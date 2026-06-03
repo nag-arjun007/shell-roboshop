@@ -5,7 +5,7 @@ DOMAIN_NAME="arjundevops.xyz"
  
 for instance in $@
 do
-    echo"Launching instance: $instance"
+    echo "Launching instance: $instance"
     INSTANCE_ID=$(aws ec2 run-instances \
         --image-id ami-0220d79f3f480ecf5 \
         --instance-type t3.micro \
