@@ -1,6 +1,11 @@
 #!/bin/bash
 
 #export PATH=$PATH:/usr/local/bin
+echo "Shell: $0"
+which aws
+
+echo "PATH=$PATH"
+which aws
 
 AMI_ID="ami-0220d79f3f480ecf5"
 ZONE_ID="Z05477002C2Z6SK9SKMK6" # replace with your zone ID
@@ -11,6 +16,12 @@ Y="\e[33m"
 N="\e[0m"
 
 ALL_INSTANCES="mongodb redis mysql rabbitmq catalogue user cart shipping payment frontend"
+
+echo "Shell: $0"
+which aws
+
+echo "PATH=$PATH"
+which aws
 
 ### Validation ###
 if [ $# -lt 2 ]; then
